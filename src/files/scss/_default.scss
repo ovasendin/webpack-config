@@ -1,0 +1,90 @@
+// Default
+
+$font: sans-serif;
+$size: 16px;
+$width: 1480px;
+$padding: 0 40px;
+$offset: 50px;
+$colorFontDefault: #000;
+$colorFontGreyInput: #999;
+
+// Styles
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  position: relative;
+  font-family: $font;
+  font-weight: normal;
+  font-style: normal;
+  font-size: $size;
+  color: $colorFontDefault;
+  min-height: 100vh;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: $width;
+  padding: $padding;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-position: inside;
+}
+button {
+  background-color: transparent;
+  font-family: $font;
+  font-size: $size;
+  border: 0;
+  cursor: pointer;
+}
+input {
+  font-family: $font;
+  border: 0;
+}
+:active,
+:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  font-family: $font;
+  color: $colorFontGreyInput;
+  font-size: $size - 2;
+  font-weight: normal;
+  opacity: 1;
+}
+::-moz-placeholder {
+  font-family: $font;
+  color: $colorFontGreyInput;
+  font-size: $size - 2;
+  font-weight: normal;
+  opacity: 1;
+}
+:-moz-placeholder {
+  font-family: $font;
+  color: $colorFontGreyInput;
+  font-size: $size - 2;
+  font-weight: normal;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  font-family: $font;
+  color: $colorFontGreyInput;
+  font-size: $size - 2;
+  font-weight: normal;
+  opacity: 1;
+}
